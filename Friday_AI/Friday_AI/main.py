@@ -11,7 +11,7 @@ chatStr = ""
 # Function to chat using OpenAI
 def chat(query):
     global chatStr
-    openai.api_key = os.getenv("sk-proj-p1jiRlZV1YSX8YaNE1IWT3BlbkFJspdlnuPeOjuDSbtavo9m")  # Use environment variable for the API key
+    openai.api_key = os.getenv("Your API Key")  # Use environment variable for the API key
     chatStr += f"User: {query}\nAssistant: "
     response = openai.Completion.create(
         model="text-davinci-003",
